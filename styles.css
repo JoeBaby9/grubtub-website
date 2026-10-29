@@ -112,11 +112,11 @@ section{padding-block:clamp(56px,8vw,96px)}
 .steps p{color:var(--muted)}
 
 /* gallery: fixed slots so no gaps at any width */
-.gallery{display:grid;gap:12px;grid-template-columns:repeat(4,1fr);grid-template-rows:220px 220px;
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(4,1fr);grid-template-rows:190px 190px;
   grid-template-areas:"a w w d" "a r s d"}
 .gallery img{width:100%;height:100%;object-fit:cover;border-radius:14px;min-width:0}
-.gallery .g-a{grid-area:a}.gallery .g-w{grid-area:w}.gallery .g-d{grid-area:d}.gallery .g-r{grid-area:r}.gallery .g-s{grid-area:s}
-@media (max-width:760px){.gallery{grid-template-columns:1fr 1fr;grid-template-rows:200px 170px 170px 170px;
+.gallery .g-a{grid-area:a;object-position:44% 50%}.gallery .g-w{grid-area:w}.gallery .g-d{grid-area:d;object-position:32% 50%}.gallery .g-r{grid-area:r}.gallery .g-s{grid-area:s;object-position:50% 80%}
+@media (max-width:760px){.gallery{grid-template-columns:1fr 1fr;grid-template-rows:200px 115px 115px 160px;
   grid-template-areas:"w w" "a d" "a d" "r s"}}
 
 /* reviews */
