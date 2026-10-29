@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /social/
 Allow: /
 Sitemap: https://grubtubrentals.com/sitemap.xml
