@@ -240,3 +240,8 @@ section{padding-block:clamp(56px,8vw,96px)}
 .rain b{color:var(--ink);display:block}
 @media (max-width:760px){.about-grid{grid-template-columns:1fr;gap:24px}.about-me{aspect-ratio:1/1}.rain{grid-template-columns:1fr}}
 .bookbar div,.bookbar .btn{white-space:nowrap}
+/* seo pages */
+.crumbs{font-size:14px;color:var(--muted);margin-bottom:10px}
+.crumbs a{color:var(--muted)}
+.foot-links{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:14px;font-size:15px}
+.foot-links a{opacity:.9}

@@ -95,6 +95,7 @@
     <div>
       <a class="logo" href="/"><span class="g">GRUB</span><span class="t">TUB</span></a>
       <p style="margin-top:8px;max-width:30ch;opacity:.85">Private BBQ donut boat rentals on Padanaram Harbor.</p>
+      <p class="foot-links"><a href="/boat-rentals-dartmouth-ma">Boat rentals in Dartmouth</a><a href="/party-boat-rental-south-coast-ma">Party boat rental</a><a href="/gift-cards">Gift cards</a><a href="/blog">Blog</a></p>
     </div>
     <div>
       <h4>Find us</h4>
@@ -109,6 +110,17 @@
   </div>
   <div class="wrap"><small>&copy; 2026 GrubTub Rentals, a Salt Rock Holdings company. <a href="/blog">Blog</a></small></div>
 </footer>
+<script>
+(function(){
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href*="fareharbor.com/embeds/book"]');
+    if(!a) return;
+    var gift=a.href.indexOf('707168')>-1;
+    try{ if(window.fbq) fbq('track', gift?'AddToCart':'InitiateCheckout'); }catch(_){}
+    try{ if(window.gtag) gtag('event', gift?'gift_card_click':'begin_checkout', {link_text:(a.textContent||'').trim()}); }catch(_){}
+  },true);
+})();
+</script>
 <script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
 </body>
 </html>
