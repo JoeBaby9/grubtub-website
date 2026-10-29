@@ -1,0 +1,67 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/booking",
+      "destination": "/#prices",
+      "permanent": true
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "/#how",
+      "permanent": true
+    },
+    {
+      "source": "/frequent-questions",
+      "destination": "/#faq",
+      "permanent": true
+    },
+    {
+      "source": "/blog-list",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/why-grub-tub-is-the-best-boat-rental-on-buzzards-bay",
+      "destination": "/boat-rentals-near-new-bedford-ma-no-license-required",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-grub-tub-and-why-everyone-is-talking-about-it",
+      "destination": "/boat-rentals-near-new-bedford-ma-no-license-required",
+      "permanent": true
+    },
+    {
+      "source": "/the-best-thing-to-do-in-south-dartmouth-this-summer",
+      "destination": "/things-to-do-in-padanaram-harbor-south-dartmouth",
+      "permanent": true
+    },
+    {
+      "source": "/best-summer-activities-in-dartmouth-ma-2026-guide",
+      "destination": "/things-to-do-in-padanaram-harbor-south-dartmouth",
+      "permanent": true
+    },
+    {
+      "source": "/why-padanaram-is-the-best-harbor-on-the-south-coast",
+      "destination": "/things-to-do-in-padanaram-harbor-south-dartmouth",
+      "permanent": true
+    },
+    {
+      "source": "/the-perfect-summer-group-activity-near-new-bedford",
+      "destination": "/things-to-do-near-new-bedford-on-a-summer-weekend",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
